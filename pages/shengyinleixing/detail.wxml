@@ -1,0 +1,44 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">声音类型：</view>
+<view class="detail-item-text">{{detailList.shengyinleixing}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+
+
+
+</view>
+
+</view>
+</view>

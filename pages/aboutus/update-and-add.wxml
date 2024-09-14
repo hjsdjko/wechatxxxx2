@@ -1,0 +1,55 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">标题</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.title==true}}"  placeholder="标题" model:value="{{title}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">副标题</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.subtitle==true}}"  placeholder="副标题" model:value="{{subtitle}}" />
+    </view>
+
+    <com-edit></com-edit>
+<view class="item-box"    bindtap="uploadpicture1">
+    <view   class="item-label">图片1</view>
+    <image  src="{{picture1Path}}" mode="aspectFill"  class="item-img"></image>
+</view>
+<view class="item-box"    bindtap="uploadpicture2">
+    <view   class="item-label">图片2</view>
+    <image  src="{{picture2Path}}" mode="aspectFill"  class="item-img"></image>
+</view>
+<view class="item-box"    bindtap="uploadpicture3">
+    <view   class="item-label">图片3</view>
+    <image  src="{{picture3Path}}" mode="aspectFill"  class="item-img"></image>
+</view>
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

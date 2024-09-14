@@ -1,0 +1,111 @@
+<view class="index-container">
+    <view class="content">
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#6484ff30'   indicator-active-color="#6484ff"   autoplay="{{true}}"  circular="{{true}}">
+        <swiper-item class="swiper-item"  wx:for="{{swiperList}}" wx:if="{{index<=2}}" wx:key="{{index}}"       >
+            <image src="{{item.img}}" mode="aspectFill"   class="swiper-img"></image>
+            <view   wx:if="true"  class="swiper-title">{{item.title}}</view>
+        </swiper-item>
+    </swiper>
+
+<!-- 菜单栏menu -->
+
+
+        <view wx:if="{{true}}"   class="grid-box">
+
+            <view wx:for="{{frontMenuList}}" wx:key="index" class="grid-box-item">
+                <view wx:if="{{item.child.length >1}}" data-item="{{item}}" bind:tap="selectTap">
+                    <text class="iconfont {{item.fontClass}} grid-icon" />
+                    <text class="item-munu">{{item.menu}}</text>
+                </view>
+
+                <view wx:else="" data-item="{{item}}" bind:tap="menuTap">
+                    <text class="iconfont {{item.fontClass}} grid-icon" />
+                    <text class="item-munu">{{item.menu}}</text>
+                </view>
+
+            </view>
+
+            <com-popup id="bottomFrame" className="buttom-popup">
+                <view bind:tap="cancelShow" style="display: flex;justify-content: flex-end;margin:20rpx 40rpx 0 0;">取消</view>
+                <view data-myitem="{{myitem}}" bind:tap="tomenuTap" wx:for="{{childItem}}" wx:for-item="myitem" wx:for-index="childindex" style="height: 100%;height: 88rpx;margin:20rpx 0;text-align: center;line-height: 88rpx;border-width: 0 0 2rpx 0;border-style: solid;border-color: #eee;" wx:key="{{childindex}}">
+                    {{myitem.menu}}
+                </view>
+
+
+            </com-popup>
+
+
+
+        </view>
+
+
+<!-- 商品推荐 -->
+
+
+
+
+
+<view class="max-list-box">
+
+<view class="goods-list-title-box">
+
+<view class="goods-list-title-text">助眠故事</view>
+<text bind:tap="checkMoreTap" data-tablename="zhumiangushi"  class="goods-list-title-more" >更多</text>
+</view>
+
+<!--  样式1,2,3oook-->
+<view class="list-three-box">
+<view class="list-three-item-box" wx:for="{{homezhumiangushiList}}"  catchtap="toDetail" data-item="{{item}}"         data-tablename="zhumiangushi"
+      data-id="{{item.id}}">
+<image class="list-img-three"  src="{{item.fengmian}}" mode="aspectFill" />
+<view class="list-right-three" catchtap="toDetail" data-item="{{item}}"         data-tablename="zhumiangushi">
+<view    class="list-title-three">
+{{item.gushimingcheng}}
+</view>
+<view    class="list-title-three">
+发布时间:{{item.fabushijian}}
+</view>
+</view>
+
+
+</view>
+
+</view>
+
+<!--  样式444oook-->
+
+<!--  样式5oook-->
+<!--  样式6ok--->
+<!--  样式7ok-->
+<!--  样式8OK-->
+<!--  默认样式9ok-->
+
+</view>
+
+
+
+
+
+
+
+
+        <!-- 关于我们 -->
+    <view class='about-box'>
+        <view class='about-title'>{{aboutUsDetail.title}}</view>
+        <view class='about-subhead'>{{aboutUsDetail.subtitle}}</view>
+        <view class='about-img-box'>
+            <image class='img1' wx:if=" {{aboutUsDetail.picture1}}" src="{{baseURL+aboutUsDetail.picture1}}" mode=" aspectFill" />
+            <image class='img2' wx:if=" {{aboutUsDetail.picture2}}" src="{{baseURL+aboutUsDetail.picture2}}" mode=" aspectFill" />
+            <image class='img3' wx:if=" {{aboutUsDetail.picture3}}" src="{{baseURL+aboutUsDetail.picture3}}" mode=" aspectFill" />
+        </view>
+        <rich-text class='about-desc'  nodes="{{systemIntroductionDetail.content}}" />
+        <view class='about-box1' />
+        <view class='about-box2'  />
+    </view>
+
+
+
+
+    </view>
+</view>

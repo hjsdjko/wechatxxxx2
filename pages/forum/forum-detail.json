@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "comment-item": "/component/comment-item/comment-item"
+  },
+  "navigationBarTitleText": "论坛详情",
+  "navigationBarBackgroundColor":"#FFFFFF",
+  "navigationBarTextStyle": "black"
+}

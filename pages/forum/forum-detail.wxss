@@ -1,0 +1,82 @@
+.forumCenter-container {
+width: 100vw;
+background-color: #f7f6fa;
+}
+
+.content {
+letter-spacing: 2rpx;
+display: flex;
+flex-direction: column;
+height: inherit;
+position: relative;
+margin: 0 20rpx;
+}
+
+.title {
+text-align: center;
+font-size: 53rpx;
+font-weight: 700;
+margin: 20rpx;
+}
+
+.publisher {
+text-align: center;
+font-size: 26rpx;
+font-weight: 700;
+color: #888;
+margin-bottom: 26rpx;
+}
+
+.post-content {
+font-size: 39rpx;
+line-height: 66rpx;
+letter-spacing: 6rpx;
+}
+
+.comment-area {
+width: inherit;
+height: inherit;
+display: flex;
+flex-direction: column;
+padding-top: 20rpx;
+}
+
+.comment-item {
+padding: 20rpx 40rpx;
+min-height: 10vh;
+border-bottom: 2rpx solid rgb(238, 238, 238);
+position: relative;
+}
+
+.username {
+font-size: 34rpx;
+line-height: 2;
+color: #000;
+}
+
+.date {
+color: rgb(128, 140, 152);
+font-size: 24rpx;
+}
+
+.comment-content {
+margin-top: 20rpx;
+}
+
+.comment-btn {
+background-color: #e54d42;
+color: #fff;
+height: 6vh;
+line-height: 6vh;
+border-radius: 20rpx;
+margin-top: 60rpx;
+text-align: center;
+}
+
+.reply {
+color: #e54d42;
+position: absolute;
+right: 0;
+bottom: 20rpx;
+font-size: 24rpx;
+}

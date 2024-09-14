@@ -1,0 +1,37 @@
+<view class="forumCenter-container">
+    <view class="search">
+        <input class="search-input" model:value="{{name}}" type="text" id="" placeholder="标题">
+        <text class="iconfont icon-sousuo4 icons"></text>
+        </input>
+        <view class="searchBtn" bind:tap="searhandler">搜索</view>
+    </view>
+    <view class="content">
+        <view class="title">论坛专区</view>
+        <view class="list">
+            <view class="list-item"  data-id="{{item.id}}" wx:for="{{currentList}}" wx:key="{{index}}">
+                <image class="left" src="../../static/paper.png" mode="aspectFill" />
+                <view class="right">
+                    <view>{{item.title}}</view>
+                    <view class="{{item.isdone == '开放' ? 'ischeck' : 'nocheck'}}">
+                        {{item.isdone == '开放'?"开放":"私人"}}
+                    </view>
+                    <view class="publishdate">发布时间：{{item.addtime}}</view>
+                    <view class="operate">
+                        <view wx:if="{{checkAuth}}" class="check-btn" data-id="{{item.id}}" bindtap="todetail">查看</view>
+                        <view wx:if="{{editAuth}}" class="edit-btn" data-id="{{item.id}}" catch:tap="editTap">修改</view>
+                        <view wx:if="{{delAuth}}" class="del-btn" data-id="{{item.id}}" catch:tap="delTap">删除</view>
+                    </view>
+                </view>
+            </view>
+            <view class="nodata">
+                <!-- ~没有更多了~ -->
+                <button wx:if="{{addShow && addAuth}}" class="addBtn" bind:tap="addTap">新增</button>
+            </view>
+
+
+        </view>
+
+
+    </view>
+
+</view>

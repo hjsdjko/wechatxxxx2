@@ -1,0 +1,106 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">声音名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shengyinmingcheng==true}}"  placeholder="声音名称" model:value="{{shengyinmingcheng}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">梅花三弄</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.meihuasannong==true}}"  placeholder="梅花三弄" model:value="{{meihuasannong}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">十面埋伏</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shimianmaifu==true}}"  placeholder="十面埋伏" model:value="{{shimianmaifu}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">阳春白雪</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yangchunbaixue==true}}"  placeholder="阳春白雪" model:value="{{yangchunbaixue}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">胡茄十八拍</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.huqieshibapai==true}}"  placeholder="胡茄十八拍" model:value="{{huqieshibapai}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">紫竹调</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.zizhudiao==true}}"  placeholder="紫竹调" model:value="{{zizhudiao}}" />
+    </view>
+
+<view class="item-box"    bindtap="uploadfengmian">
+    <view   class="item-label">封面</view>
+    <image  src="{{fengmianPath}}" mode="aspectFill"  class="item-img"></image>
+</view>
+    <view class="item-box">
+        <view class="item-label">收藏数量</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.storeupnum==true}}"  placeholder="收藏数量" model:value="{{storeupnum}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

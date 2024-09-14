@@ -1,0 +1,73 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">标题：</view>
+<view class="detail-item-text">{{detailList.title}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">副标题：</view>
+<view class="detail-item-text">{{detailList.subtitle}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">图片1：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.picture1}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+<view class="detail-detail-img-box">
+<view class="detail-item-label">图片2：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.picture2}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+<view class="detail-detail-img-box">
+<view class="detail-item-label">图片3：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.picture3}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+
+
+
+
+
+
+
+<view class="textarea-box">
+<view class="textarea-label">内容</view>
+<view class="textarea-text">
+    <rich-text nodes="{{detailList.content}}"></rich-text>
+</view>
+</view>
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+
+
+
+</view>
+
+</view>
+</view>

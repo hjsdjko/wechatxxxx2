@@ -1,0 +1,182 @@
+.forumCenter-container {
+width: 100vw;
+background-color: #f7f6fa;
+min-height: 100vh;
+}
+
+.title {
+padding: 20rpx 0 0 0;
+}
+
+
+
+
+
+
+.content {
+letter-spacing: 2rpx;
+display: flex;
+flex-direction: column;
+margin: 0 20rpx;
+/* position: relative; */
+position: relative;
+
+}
+
+.addBtn {
+position: absolute;
+bottom: 0rpx;
+right: 35%;
+width: 30vw;
+color: #fff;
+background-color: #67c23a;
+border-color: #67c23a;
+}
+
+.check-btn,
+.edit-btn,
+.del-btn {
+padding: 5rpx 20rpx;
+border-radius: 10%;
+text-align: center;
+}
+
+.check-btn {
+background-color: #67c23a;
+border-color: #67c23a;
+}
+
+.edit-btn {
+background-color: rgb(0, 129, 255);
+border-color: rgb(0, 129, 255);
+
+}
+
+.del-btn {
+background-color: rgb(229, 77, 66);
+border-color: rgb(229, 77, 66);
+}
+
+.operate {
+display: flex;
+font-size: 24rpx;
+color: white;
+width: 80%;
+justify-content: space-around;
+margin-top: 20rpx;
+}
+
+.list {
+height: inherit;
+width: inherit;
+display: flex;
+flex-direction: column;
+margin-bottom: 88rpx;
+}
+
+
+.ischeck,
+.nocheck {
+width: 10vw;
+color: white;
+font-size: 28rpx;
+text-align: center;
+padding: 5rpx;
+border-radius: 10%;
+}
+
+.ischeck {
+background-color: rgb(57, 181, 74);
+
+}
+
+.nocheck {
+background-color: rgb(229, 77, 66);
+}
+
+
+.nodata {
+text-align: center;
+padding: 20rpx;
+color: grey;
+}
+
+.list-item {
+width: 100%;
+display: flex;
+justify-content: space-between;
+background: #fff;
+border-radius: 28rpx;
+box-shadow: 0 0 10rpx rgba(0, 0, 0, .3);
+margin: 20rpx 0;
+}
+
+.left {
+margin: 20rpx 20rpx;
+/* background-color: pink; */
+height: 12vh;
+width: 20vw;
+border-radius: 50%;
+}
+
+.right {
+margin: 20rpx 20rpx;
+min-width: 45vw;
+max-height: 16vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.username,
+.publishdate {
+font-size: 24rpx;
+color: #bbb;
+}
+
+
+
+@import "/static/iconfig/iconfont.wxss";
+
+.search {
+height: 10vh;
+background-color: white;
+display: flex;
+align-items: center;
+padding: 0 20rpx;
+font-size: 24rpx;
+position: relative;
+}
+
+
+
+.search-input {
+background-color: #f5f5f5;
+height: 6vh;
+color: #333;
+display: -webkit-box;
+display: -webkit-flex;
+width: 70vw;
+border-radius: 50rpx;
+padding-left: 30px;
+position: relative;
+}
+
+.icons {
+width: 6vw;
+position: absolute;
+left: 20rpx;
+line-height: 6vh;
+font-size: 30rpx;
+}
+
+.searchBtn {
+background-color: #f5f5f5;
+margin: 20rpx;
+height: 6vh;
+width: 16vw;
+line-height: 6vh;
+text-align: center;
+letter-spacing: 2rpx;
+border-radius: 50rpx;
+}

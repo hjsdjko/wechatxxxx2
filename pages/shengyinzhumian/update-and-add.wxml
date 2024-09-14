@@ -1,0 +1,66 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">声音名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shengyinmingcheng==true}}"  placeholder="声音名称" model:value="{{shengyinmingcheng}}" />
+    </view>
+
+<view class="item-box"    bindtap="uploadfengmian">
+    <view   class="item-label">封面</view>
+    <image  src="{{fengmianPath}}" mode="aspectFill"  class="item-img"></image>
+</view>
+<view class="item-box">
+    <view class="item-label" >声音类型</view>
+    <picker   class="down-item-picker"     bindchange="shengyinleixingChange" value="{{shengyinleixingIndex}}"  range="{{shengyinleixingList}}">
+                <view class="down-item-picker-text">
+                    {{shengyinleixingIndex||shengyinleixingIndex==0?shengyinleixingList[shengyinleixingIndex]:"请选择声音类型"}}
+                </view>
+    </picker>
+</view>
+    <view class="item-box">
+        <view class="item-label">音频</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yinpin==true}}"  placeholder="音频" model:value="{{yinpin}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">收藏数量</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.storeupnum==true}}"  placeholder="收藏数量" model:value="{{storeupnum}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

@@ -1,0 +1,68 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">用户账号：</view>
+<view class="detail-item-text">{{detailList.yonghuzhanghao}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">用户姓名：</view>
+<view class="detail-item-text">{{detailList.yonghuxingming}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">打卡内容：</view>
+<view class="detail-item-text">{{detailList.dakaneirong}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">打卡时间：</view>
+<view class="detail-item-text">{{detailList.addtime}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">备注：</view>
+<view class="detail-item-text">{{detailList.beizhu}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+
+
+
+</view>
+
+</view>
+</view>

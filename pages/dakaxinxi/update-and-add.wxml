@@ -1,0 +1,73 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">用户账号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yonghuzhanghao==true}}"  placeholder="用户账号" model:value="{{yonghuzhanghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">用户姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yonghuxingming==true}}"  placeholder="用户姓名" model:value="{{yonghuxingming}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">打卡内容</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.dakaneirong==true}}"  placeholder="打卡内容" model:value="{{dakaneirong}}" />
+    </view>
+
+    <view class="item-box"  >
+        <view class="item-label">打卡时间</view>
+        <view class="down-item-picker"  bindtap="ondakashijianTap">
+            <view class="down-item-picker-text">         {{dakashijian}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showdakashijian}}" bind:dateHandler="dakashijianTap"></com-date>
+    <view class="item-box">
+        <view class="item-label">备注</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.beizhu==true}}"  placeholder="备注" model:value="{{beizhu}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

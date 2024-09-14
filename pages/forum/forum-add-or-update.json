@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "com-edit": "/component/com-editor/com-editor"
+  },
+  "navigationBarTitleText": "我的发布",
+  "navigationBarBackgroundColor":"#FFFFFF",
+  "navigationBarTextStyle": "black"
+}

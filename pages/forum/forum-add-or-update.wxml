@@ -1,0 +1,27 @@
+<view class="forum-container">
+    <view class="forum-content">
+        <view class="forum-from">
+            <view class="item-box">
+                <input class="item-input"  type="text" placeholder="标题" model:value="{{title}}"  />
+            </view>
+
+            <view class="item-box">
+                <picker class="item-picker" mode="selector" range="{{options}}" value="{{index}}" bindchange="optionChange">
+                    <view class="picker-text">{{isdone}}</view>
+                </picker>
+            </view>
+
+            <view class="item-textarea-box">
+                <com-edit class="item-textarea"></com-edit>
+            </view>
+
+            <view class="item-btn">
+                <button class="submit" bind:tap="submit">确认提交</button>
+            </view>
+
+        </view>
+
+
+
+    </view>
+</view>

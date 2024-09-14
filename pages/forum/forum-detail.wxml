@@ -1,0 +1,17 @@
+<view class="forumDetail-container">
+    <view class="content">
+        <view class="title">
+            <text>{{commentlist.title}}</text>
+        </view>
+        <view class="publisher">
+            发布人：{{commentlist.username}}
+        </view>
+
+        <rich-text nodes="{{commentlist.content}}" />
+        <view class="comment-area">
+            <comment-item treeData="{{commentlist.childs}}" tableName="forum"></comment-item>
+        </view>
+        <view class="comment-btn" bind:tap="commentBtn">评论</view>
+
+    </view>
+</view>
